@@ -1,0 +1,21 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #141213;
+    padding:  19px;
+    padding-left: 4vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    z-index: 99;
+
+}
+.logoImg{
+    height: 40px;
+}
+.logoName{
+    color: white;
+    margin-right: 50px;
+}
