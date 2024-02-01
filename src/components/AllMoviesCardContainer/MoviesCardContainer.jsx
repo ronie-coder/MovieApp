@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './cardcontainer.css'
 import MovieCard from '../MovieCard/MovieCard'
 import axios from 'axios'
+import HeroText from '../HeroText/HeroText'
 const MoviesCardContainer = () => {
     const [moviesData, setMoviesData] = useState([])
     const [error,setError] = useState(false)
@@ -20,6 +21,7 @@ const MoviesCardContainer = () => {
     },[])
   return (
     <div className='cardsContainer'>
+        <HeroText></HeroText>
         {moviesData.map((m)=>(
             <MovieCard  m={m}></MovieCard>
         ))}

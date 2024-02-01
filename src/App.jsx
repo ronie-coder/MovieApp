@@ -30,8 +30,9 @@ function App() {
 },[axios])
   return (
     <Router>
-      <Dummy></Dummy>
+      
       <Navbar allBookings={allBookings} setAllBookings={setAllBookings}></Navbar>
+      
       <Routes>
       <Route path='/' element={<Home allBookings={allBookings}/>}/>
       <Route path='/:moviename' element={<Moviedetails moviesData={moviesData} setAllBookings={setAllBookings}/>}/>

@@ -6,7 +6,7 @@ import MoviesCardContainer from '../../components/AllMoviesCardContainer/MoviesC
 const Home = () => {
   return (
     <div className='home'>
-        
+      
         <HeroText></HeroText>
         <MoviesCardContainer></MoviesCardContainer>
     </div>

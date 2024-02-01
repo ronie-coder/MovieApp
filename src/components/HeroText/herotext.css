@@ -1,9 +1,10 @@
 .herotext{
     width: 100%;
    
-    padding: 10px 35px;
+    padding: 0px 25px;
     color: white;
     font-weight: 500;
     font-size: 4vh;
     font-style: italic;
+   margin-bottom: 10px;
 }
