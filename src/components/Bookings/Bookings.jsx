@@ -15,7 +15,7 @@ const Bookings = ({allBookings,setAllBookings}) => {
     <div className={bookOpen ? "bookingsContainer" : "bookingsContainer1"}>
         <div className='logoBook' style={{fontSize:"18px",fontWeight:800}}>YOUR BOOKINGS <GiCrossMark onClick={()=>setBookOpen(false)}/></div>
         <div className="bookingBannerContainer">
-            {allBookings.length === 0 && <h3  style={{color:"white",width:"100%",display:"flex",alignItems:"center",justifyContent:"center",marginTop:"10px"}}>No Bookings.</h3>}
+            {allBookings?.length === 0 && <h3  style={{color:"white",width:"100%",display:"flex",alignItems:"center",justifyContent:"center",marginTop:"10px"}}>No Bookings.</h3>}
             {allBookings?.map((b)=>(
                  <IndividualBanner b={b} allBookings={allBookings} setAllBookings={setAllBookings}></IndividualBanner>
             ))}
